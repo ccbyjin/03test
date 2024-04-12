@@ -1,3 +1,4 @@
+
 const IdCodeList = {
   A: 10,
   B: 11,
@@ -45,7 +46,7 @@ function idVarify(val) {
   let answer = (10 - mod).toString().slice(-1);
 
   if (endVal === answer)
-    return { answer: true, message: "國民身分證驗證成功！" };
+  return { answer: true, message: "國民身分證驗證成功！" };
   return { answer: false, message: `驗證失敗，正確檢核碼為${answer}` };
 }
 
